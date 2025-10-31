@@ -1,4 +1,4 @@
-import numpy
+import numpy as np
 
 # Follow the tasks below to practice basic Python concepts.
 # Write your code in between the dashed lines.
@@ -11,9 +11,8 @@ import numpy
 #The name of the function should be step
 
 # Your code here:
-# -----------------------------------------------
+# ----------------------------------------------
 
-def step
 
 
 # -----------------------------------------------
@@ -28,7 +27,7 @@ def step
 
 # Your code here:
 # -----------------------------------------------
-def ReLu
+#def ReLu
 
 
 # -----------------------------------------------
@@ -44,7 +43,7 @@ def ReLu
 # Your code here:
 # -----------------------------------------------
 
-def neural_net_layer
+#def neural_net_layer
 
 
 # ------------------------------------------
