@@ -20,7 +20,8 @@ def step(x):
 
 
 print(step(5))
-
+print(step(-2))
+print(step(0))
 # -----------------------------------------------
 
 
@@ -33,9 +34,15 @@ print(step(5))
 
 # Your code here:
 # -----------------------------------------------
-#def ReLu
+def ReLu(arr, cutoff=0):
+    return np.maximum(arr, cutoff)
 
 
+
+x = np.array([-3, -1, 0, 2, 5])
+ReLu(x, 0)
+ReLu(x, 1)
+ReLu(x)
 # -----------------------------------------------
 
 
@@ -49,7 +56,22 @@ print(step(5))
 # Your code here:
 # -----------------------------------------------
 
-#def neural_net_layer
+def neural_net_layer(X, weights):
+    result = X @ weights
+    return ReLu(result)
+
+
+
+y = np.array([
+    [1, -2, 3],
+    [0, 5, -1],
+    [-1, -1, -1]
+])
+weights = np.array([0.5, 1, -1])
+
+output = neural_net_layer(y, weights)
+print(output)
+
 
 
 # ------------------------------------------
